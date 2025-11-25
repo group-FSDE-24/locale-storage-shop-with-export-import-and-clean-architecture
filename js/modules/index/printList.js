@@ -19,11 +19,12 @@ function addInBag(item) {
 
 function printList(item) {
     let li = document.createElement('li')
-    li.innerHTML = printItem()
+    li.innerHTML = printItem(item)
 
     li.querySelector('button').addEventListener('click', () => addInBag(item))
     
     listTag.appendChild(li)
 }
+
 
 export default printList
